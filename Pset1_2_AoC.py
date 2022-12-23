@@ -60,14 +60,16 @@ class Calories:
     def get_second_max_calories(self):
         second_max_calories = 0
         for elf_object in self._elf_list:
-            if elf_object.get_calorie_sum() > second_max_calories and elf_object.get_calorie_sum() != 69281:
+            if elf_object.get_calorie_sum() > second_max_calories and elf_object.get_calorie_sum() \
+            < self.get_max_calories():
                 second_max_calories = elf_object.get_calorie_sum()
         return second_max_calories
 
     def get_third_max_calories(self):
         third_max_calories = 0
         for elf_object in self._elf_list:
-            if elf_object.get_calorie_sum() > third_max_calories and elf_object.get_calorie_sum() != 69281 and elf_object.get_calorie_sum() != 67653:
+            if elf_object.get_calorie_sum() > third_max_calories and elf_object.get_calorie_sum() < \
+            self.get_max_calories() and elf_object.get_calorie_sum() < self.get_second_max_calories():
                 third_max_calories = elf_object.get_calorie_sum()
         return third_max_calories
 

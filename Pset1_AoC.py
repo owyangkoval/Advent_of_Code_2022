@@ -3,7 +3,7 @@
 def main():
     file = open('Pset1_AoC_input.txt', 'r')
     read = file.readlines()
-    read.append('\n') #appended onto the end of the file to include the last set of calories
+    read.append('\n') # appended onto the end of the file to include the last set of calories
 
     calories = Calories() # calorie object
 
