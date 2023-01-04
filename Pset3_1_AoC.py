@@ -1,4 +1,4 @@
-#rucksack reorganization
+#rucksack reorganization part 1
 
 def main():
     file = open('Pset3_1_AoC_input.txt', 'r')
