@@ -1,4 +1,4 @@
-# Camp Cleanup
+# Camp Cleanup Part 2
 
 def main():
     file = open('Pset4_AoC_input.txt', 'r')
@@ -58,9 +58,11 @@ class SectionIDs:
         # OVERLAP CHECK
         counter = 0
         if set(self._sect_1).issubset(self._sect_2) or set(self._sect_2).issubset(self._sect_1) or \
-                set(self._sect_2) == set(self._sect_1):
+                set(self._sect_2) == set(self._sect_1) or set(self._sect_1).intersection(set(self._sect_2)) or \
+                set(self._sect_2).intersection(set(self._sect_1)):
             return True
 
 
 if __name__ == '__main__':
     main()
+
