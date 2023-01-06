@@ -1,7 +1,7 @@
 #rucksack reorganization part 1
 
 def main():
-    file = open('Pset3_1_AoC_input.txt', 'r')
+    file = open('Pset3_AoC_input.txt', 'r')
     read = file.readlines()
 
     sum = 0

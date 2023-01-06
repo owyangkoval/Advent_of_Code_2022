@@ -1,7 +1,7 @@
 # AoC = Counting Calories - for the Top Three Elves
 
 def main():
-    file = open('Pset1_2_AoC_input.txt', 'r')
+    file = open('Pset1_AoC_input.txt', 'r')
     read = file.readlines()
     read.append('\n')  # appended onto the end of the file to include the last set of calories
 

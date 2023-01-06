@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 
 def main():
-    file = open('Pset2_1_AoC_input.txt', 'r')
+    file = open('Pset2_AoC_input.txt', 'r')
     read = file.readlines()
 
     player_gameplay = Gameplay()
